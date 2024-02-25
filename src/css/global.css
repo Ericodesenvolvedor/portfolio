@@ -1,0 +1,36 @@
+:root {
+  font-size: 62.5%;
+
+  --color-1: #0C151D;
+  --color-2: #F1F2F4;
+  --color-3: #A3ABB2;
+  --color-4: #FFE071;
+  --color-5: #3D3D3D;
+  --color-6: #171F26;
+}
+
+body {
+  background-color: var(--color-1);
+}
+
+h1, h2, h3, p, a, strong, button {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+}
+
+header, section, nav, main {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 420px;
+  }
+}

@@ -1,0 +1,79 @@
+dialog {
+  background-color: transparent;
+  width: 100%;
+  border: 0;
+  padding: 0 2rem;
+}
+
+dialog:-internal-dialog-in-top-layer {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog .container {
+  position: relative;
+  background-color: var(--color-2);
+}
+
+dialog img {
+  display: block;
+  max-width: 100%;
+}
+
+dialog::backdrop {
+  background-color: #0000005b;
+}
+
+
+dialog .text-wrapper {
+  padding: 2rem;
+}
+
+dialog h3 {
+  font-size: 2.4rem;
+  color: var(--color-1);
+}
+
+dialog p {
+  font-size: 1.6rem;
+  margin-block: 2rem;
+}
+
+dialog .header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+dialog .techs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  font-size: 2rem;
+}
+
+dialog a {
+  color: var(--color-1);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+dialog a:nth-child(1) {
+  margin-right: 2rem;
+}
+
+dialog .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #ff0000;
+}

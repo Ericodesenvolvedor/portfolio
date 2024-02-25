@@ -1,0 +1,58 @@
+nav {
+  margin-top: 7.8rem;
+}
+
+nav .container {
+  background-color: var(--color-6);
+  padding: 1.8rem 2.4rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+nav .container a {
+  display: inline-block;
+  padding-block: 2.4rem;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 8px;
+  
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--color-3);
+}
+
+nav .container a:nth-child(1) {
+  background-color: var(--color-1);
+}
+
+@media screen and (max-width:700px) {
+  nav {
+    margin-top: 3.8rem;
+  }
+  
+  nav .container {
+    padding: 1.8rem 2.4rem;
+  }
+  
+  nav .container a {
+    padding-block: 1.6rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:420px) {
+  nav .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  nav .container a {
+    background-color: var(--color-1);
+    padding-block: 1.6rem;
+    font-size: 1.8rem;
+  }
+}
