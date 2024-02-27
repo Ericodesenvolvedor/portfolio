@@ -2,13 +2,13 @@ main {
   margin-top: 6.5rem;
 }
 
-main ul {
+main .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3.2rem;
 }
 
-main ul li {
+main .projects li {
   background-color: var(--color-6);
 
   & img {
@@ -68,11 +68,11 @@ main ul li {
     margin-top: 3.8rem;
   }
   
-  main ul {
+  main .projects {
     grid-template-columns: 1fr;
   }
 
-  main ul li {
+  main .projects li {
     & .text-wrapper {
       padding: 2rem 1rem;
     }
