@@ -27,3 +27,9 @@ export function showDialog() {
     })  
   )
 }
+
+export function showNumberProjects() {
+  const projects = document.querySelector('.projects');
+  const text = document.querySelector('.number-projects');
+  text.textContent = projects.childElementCount;
+}

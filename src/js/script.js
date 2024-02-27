@@ -1,4 +1,5 @@
-import { showDialog, showProjects } from "./show.js";
+import { showDialog, showProjects, showNumberProjects } from "./show.js";
 
 showProjects();
+showNumberProjects();
 showDialog();
