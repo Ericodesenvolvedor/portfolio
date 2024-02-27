@@ -58,7 +58,7 @@ main .projects li {
 }
 
 @media screen and (max-width:700px) {  
-  main .container {
+  main .projects {
     grid-template-columns: 1fr;
   }
 }

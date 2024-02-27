@@ -16,6 +16,16 @@ export function project(image, title, description, links) {
   `
 }
 
+export function skills(icon, title, time) {
+  return `
+    <li>
+      <i class="ph ph-file-${icon}"></i>
+      <h3>${title}</h3>
+      <strong>Tempo: ${time}</strong>
+    </li>
+  `
+}
+
 export function modal(search, database) {
   const [{ image, title, description, links, tech }] = database.filter(item => {
     return item.title === search;

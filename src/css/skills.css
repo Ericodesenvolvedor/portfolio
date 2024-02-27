@@ -1,0 +1,57 @@
+main .skills {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.skills li {
+  padding: 2rem;
+  background-color: var(--color-6);
+  display: flex;
+  flex-direction: column;
+
+  & i {
+    align-self: center;
+    font-size: 5rem;
+    color: var(--color-7);
+  }
+  
+  & h3 {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    color: var(--color-7);
+  }
+  
+  & strong {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--color-4);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main .skills {
+    place-content: center;
+    grid-template-columns: minmax(20rem, 25rem);
+  }
+  
+  .skills li {  
+    & i {
+      font-size: 3rem;
+    }
+    
+    & h3 {
+      font-size: 1.8rem;
+    }
+    
+    & strong {
+      font-size: 1.2rem;
+    }
+  }
+}
