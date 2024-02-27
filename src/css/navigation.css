@@ -54,7 +54,6 @@ nav .container button:nth-child(1) {
   }
   
   nav .container button {
-    background-color: var(--color-1);
     padding-block: 1.6rem;
     font-size: 1.8rem;
   }
